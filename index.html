@@ -1,0 +1,145 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Introducción a la Complejidad Algorítmica con PSeInt</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="algoritmos-markdown"
+                  title="Introducción a la Complejidad Algorítmica con PSeInt"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Sección 1: Introducción" duration="0">
+        <h2 is-upgraded>Objetivo</h2>
+<ul>
+<li>Entender los conceptos básicos de la complejidad algorítmica.</li>
+<li>Aprender a identificar la complejidad de los algoritmos mediante ejemplos en PSeInt.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 2: Conceptos Básicos de Complejidad Algorítmica" duration="0">
+        <h2 is-upgraded>Teoría</h2>
+<ul>
+<li><strong>Complejidad Temporal</strong>: Mide el tiempo que tarda un algoritmo en ejecutarse.</li>
+<li><strong>Complejidad Espacial</strong>: Mide la cantidad de memoria que necesita un algoritmo.</li>
+</ul>
+<h2 is-upgraded>Notación Big-O</h2>
+<ul>
+<li><strong>O(1)</strong>: Complejidad constante.</li>
+<li><strong>O(n)</strong>: Complejidad lineal.</li>
+<li><strong>O(n^2)</strong>: Complejidad cuadrática.</li>
+<li><strong>O(log n)</strong>: Complejidad logarítmica.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 3: Ejemplos Prácticos en PSeInt" duration="0">
+        <h2 is-upgraded>Ejemplo 1: Complejidad O(1) - Constante</h2>
+<pre><code language="language-pseudocodigo" class="language-pseudocodigo">Algoritmo ComplejidadConstante
+    Definir x Como Entero
+    x = 10
+    Escribir &#34;El valor de x es: &#34;, x
+FinAlgoritmo
+</code></pre>
+<p><strong>Explicación</strong>: El algoritmo realiza una operación que toma el mismo tiempo independientemente del tamaño de la entrada.</p>
+<h2 is-upgraded>Ejemplo 2: Complejidad O(n) - Lineal</h2>
+<pre><code language="language-pseudocodigo" class="language-pseudocodigo">Algoritmo ComplejidadLineal
+    Definir n, i Como Entero
+    Escribir &#34;Ingrese un número: &#34;
+    Leer n
+    Para i = 1 Hasta n Hacer
+        Escribir &#34;Número: &#34;, i
+    Fin Para
+FinAlgoritmo
+</code></pre>
+<p><strong>Explicación</strong>: El algoritmo realiza una operación <code>n</code> veces, donde <code>n</code> es el tamaño de la entrada.</p>
+<h2 is-upgraded>Ejemplo 3: Complejidad O(n^2) - Cuadrática</h2>
+<pre><code language="language-pseudocodigo" class="language-pseudocodigo">Algoritmo ComplejidadCuadratica
+    Definir n, i, j Como Entero
+    Escribir &#34;Ingrese un número: &#34;
+    Leer n
+    Para i = 1 Hasta n Hacer
+        Para j = 1 Hasta n Hacer
+            Escribir &#34;Par (&#34;, i, &#34;, &#34;, j, &#34;)&#34;
+        Fin Para
+    Fin Para
+FinAlgoritmo
+</code></pre>
+<p><strong>Explicación</strong>: El algoritmo realiza una operación <code>n * n</code> veces, resultando en una complejidad cuadrática.</p>
+<h2 is-upgraded>Ejemplo 4: Complejidad O(log n) - Logarítmica</h2>
+<pre><code language="language-pseudocodigo" class="language-pseudocodigo">Algoritmo ComplejidadLogaritmica
+    Definir n, contador Como Entero
+    Escribir &#34;Ingrese un número: &#34;
+    Leer n
+    contador = 0
+    Mientras n &gt; 1 Hacer
+        n = n / 2
+        contador = contador + 1
+    Fin Mientras
+    Escribir &#34;Número de divisiones: &#34;, contador
+FinAlgoritmo
+</code></pre>
+<p><strong>Explicación</strong>: El algoritmo divide <code>n</code> por 2 en cada iteración, resultando en una complejidad logarítmica.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 4: Ejercicios Prácticos" duration="0">
+        <ol type="1">
+<li><strong>Ejercicio 1</strong>: Escribir un algoritmo en PSeInt que determine la suma de los primeros <code>n</code> números naturales y analizar su complejidad.</li>
+<li><strong>Ejercicio 2</strong>: Escribir un algoritmo en PSeInt que busque un elemento en una lista desordenada y analizar su complejidad.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 5: Conclusiones" duration="0">
+        <ul>
+<li>La complejidad algorítmica es crucial para evaluar la eficiencia de los algoritmos.</li>
+<li>PSeInt es una herramienta útil para visualizar y entender estos conceptos mediante ejemplos prácticos.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Recursos Adicionales" duration="0">
+        <ul>
+<li>Enlaces a tutoriales de PSeInt.</li>
+<li>Libros y artículos sobre complejidad algorítmica.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
