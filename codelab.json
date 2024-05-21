@@ -3,12 +3,12 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2024-05-20T08:16:18-05:00",
+  "updated": "2024-05-21T18:08:49-05:00",
   "id": "algoritmos-markdown",
   "duration": 0,
   "title": "Introducción a la Complejidad Algorítmica con PSeInt",
   "summary": "Curso de algoritmos",
-  "source": ".\\Complejidad_Algoritmica_PSeInt.md",
+  "source": ".\\Complejidad_Algoritmica_PSeInt (1).md",
   "theme": "",
   "status": [
     "published"
